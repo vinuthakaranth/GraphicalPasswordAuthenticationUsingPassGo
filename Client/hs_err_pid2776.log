@@ -1,0 +1,173 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x6d99d54c, pid=2776, tid=2980
+#
+# JRE version: 6.0_22-b04
+# Java VM: Java HotSpot(TM) Client VM (17.1-b03 mixed mode, sharing windows-x86 )
+# Problematic frame:
+# V  [jvm.dll+0xfd54c]
+#
+# If you would like to submit a bug report, please visit:
+#   http://java.sun.com/webapps/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x02b92000):  JavaThread "Java2D Disposer" daemon [_thread_in_vm, id=2980, stack(0x02ef0000,0x02f40000)]
+
+siginfo: ExceptionCode=0xc0000005, reading address 0x00000000
+
+Registers:
+EAX=0x02b20d28, EBX=0x00000000, ECX=0x00000000, EDX=0x02f3fa58
+ESP=0x02f3fa48, EBP=0x02f3fb24, ESI=0x02b8ee68, EDI=0x02b92000
+EIP=0x6d99d54c, EFLAGS=0x00010203
+
+Top of Stack: (sp=0x02f3fa48)
+0x02f3fa48:   02b92000 02b92118 02b01bdc 6d8b58a9
+0x02f3fa58:   02b20d28 02f3faa0 6d97b1fa 00953c40
+0x02f3fa68:   00000005 baadc022 02b0b548 02f3fa84
+0x02f3fa78:   6d97b2a7 00953c40 00000005 02f3fac8
+0x02f3fa88:   6d97b1fa 0094d1f4 00000005 baadc023
+0x02f3fa98:   00000013 02f3faac 6d97b2a7 0094d1f4
+0x02f3faa8:   00000005 02f3facc 000014dd 00000063
+0x02f3fab8:   002b5250 009401f4 000014dd ffffffff 
+
+Instructions: (pc=0x6d99d54c)
+0x6d99d53c:   01 8b 4d b0 8b 55 a4 8b 45 f4 89 04 8a ff 45 b0
+0x6d99d54c:   8b 03 8b 48 08 0f b7 51 2a 8b 40 0c 8b 4c 90 24 
+
+
+Stack: [0x02ef0000,0x02f40000],  sp=0x02f3fa48,  free space=13e02f3f57ck
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0xfd54c]
+V  [jvm.dll+0x1003a7]
+C  [awt.dll+0x6c7cc]
+j  java.awt.Cursor.finalizeImpl(J)V+0
+j  java.awt.Cursor.access$000(J)V+1
+j  java.awt.Cursor$CursorDisposer.dispose()V+13
+j  sun.java2d.Disposer.run()V+26
+j  java.lang.Thread.run()V+11
+v  ~StubRoutines::call_stub
+V  [jvm.dll+0xf3a9c]
+V  [jvm.dll+0x186591]
+V  [jvm.dll+0xf3c67]
+V  [jvm.dll+0xf3cdd]
+V  [jvm.dll+0x11da00]
+V  [jvm.dll+0x1e7004]
+V  [jvm.dll+0x185f3c]
+C  [msvcr71.dll+0x9565]
+C  [kernel32.dll+0xb729]
+
+Java frames: (J=compiled Java code, j=interpreted, Vv=VM code)
+j  java.awt.Cursor.finalizeImpl(J)V+0
+j  java.awt.Cursor.access$000(J)V+1
+j  java.awt.Cursor$CursorDisposer.dispose()V+13
+j  sun.java2d.Disposer.run()V+26
+j  java.lang.Thread.run()V+11
+v  ~StubRoutines::call_stub
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0x031a2000 JavaThread "Thread-1" daemon [_thread_in_native, id=2908, stack(0x034e0000,0x03530000)]
+  0x03199400 JavaThread "TimerQueue" daemon [_thread_blocked, id=564, stack(0x03490000,0x034e0000)]
+  0x02bd7800 JavaThread "Image Fetcher 0" daemon [_thread_blocked, id=2964, stack(0x03120000,0x03170000)]
+  0x002b6800 JavaThread "DestroyJavaVM" [_thread_blocked, id=2916, stack(0x008c0000,0x00910000)]
+  0x02b96000 JavaThread "AWT-EventQueue-0" [_thread_blocked, id=524, stack(0x030d0000,0x03120000)]
+  0x02b92c00 JavaThread "AWT-Shutdown" [_thread_blocked, id=2184, stack(0x02f40000,0x02f90000)]
+=>0x02b92000 JavaThread "Java2D Disposer" daemon [_thread_in_vm, id=2980, stack(0x02ef0000,0x02f40000)]
+  0x02b0c400 JavaThread "Low Memory Detector" daemon [_thread_blocked, id=532, stack(0x02dc0000,0x02e10000)]
+  0x02b06800 JavaThread "CompilerThread0" daemon [_thread_blocked, id=3164, stack(0x02d70000,0x02dc0000)]
+  0x02b04c00 JavaThread "Attach Listener" daemon [_thread_blocked, id=2716, stack(0x02d20000,0x02d70000)]
+  0x02b03800 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=2180, stack(0x02cd0000,0x02d20000)]
+  0x02b00000 JavaThread "Finalizer" daemon [_thread_blocked, id=2308, stack(0x02c80000,0x02cd0000)]
+  0x02afb400 JavaThread "Reference Handler" daemon [_thread_blocked, id=112, stack(0x02c30000,0x02c80000)]
+
+Other Threads:
+  0x02af9c00 VMThread [stack: 0x02be0000,0x02c30000] [id=2460]
+  0x02b0f000 WatcherThread [stack: 0x02e10000,0x02e60000] [id=2452]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap
+ def new generation   total 4864K, used 817K [0x229e0000, 0x22f20000, 0x27e80000)
+  eden space 4352K,   7% used [0x229e0000, 0x22a2c6c0, 0x22e20000)
+  from space 512K, 100% used [0x22ea0000, 0x22f20000, 0x22f20000)
+  to   space 512K,   0% used [0x22e20000, 0x22e20000, 0x22ea0000)
+ tenured generation   total 10816K, used 1898K [0x27e80000, 0x28910000, 0x327e0000)
+   the space 10816K,  17% used [0x27e80000, 0x2805a9e8, 0x2805aa00, 0x28910000)
+ compacting perm gen  total 12288K, used 412K [0x327e0000, 0x333e0000, 0x367e0000)
+   the space 12288K,   3% used [0x327e0000, 0x328473c0, 0x32847400, 0x333e0000)
+    ro space 10240K,  54% used [0x367e0000, 0x36d5c510, 0x36d5c600, 0x371e0000)
+    rw space 12288K,  55% used [0x371e0000, 0x3787fb78, 0x3787fc00, 0x37de0000)
+
+Dynamic libraries:
+0x00400000 - 0x00424000 	C:\java6\bin\java.exe
+0x7c900000 - 0x7c9b2000 	C:\WINDOWS\system32\ntdll.dll
+0x7c800000 - 0x7c8f6000 	C:\WINDOWS\system32\kernel32.dll
+0x77dd0000 - 0x77e6b000 	C:\WINDOWS\system32\ADVAPI32.dll
+0x77e70000 - 0x77f03000 	C:\WINDOWS\system32\RPCRT4.dll
+0x77fe0000 - 0x77ff1000 	C:\WINDOWS\system32\Secur32.dll
+0x7c340000 - 0x7c396000 	C:\java6\jre\bin\msvcr71.dll
+0x6d8a0000 - 0x6db47000 	C:\java6\jre\bin\client\jvm.dll
+0x7e410000 - 0x7e4a1000 	C:\WINDOWS\system32\USER32.dll
+0x77f10000 - 0x77f59000 	C:\WINDOWS\system32\GDI32.dll
+0x76b40000 - 0x76b6d000 	C:\WINDOWS\system32\WINMM.dll
+0x76390000 - 0x763ad000 	C:\WINDOWS\system32\IMM32.DLL
+0x6d850000 - 0x6d85c000 	C:\java6\jre\bin\verify.dll
+0x6d3d0000 - 0x6d3ef000 	C:\java6\jre\bin\java.dll
+0x6d330000 - 0x6d338000 	C:\java6\jre\bin\hpi.dll
+0x76bf0000 - 0x76bfb000 	C:\WINDOWS\system32\PSAPI.DLL
+0x6d890000 - 0x6d89f000 	C:\java6\jre\bin\zip.dll
+0x6d0b0000 - 0x6d1fa000 	C:\java6\jre\bin\awt.dll
+0x73000000 - 0x73026000 	C:\WINDOWS\system32\WINSPOOL.DRV
+0x77c10000 - 0x77c68000 	C:\WINDOWS\system32\msvcrt.dll
+0x774e0000 - 0x7761e000 	C:\WINDOWS\system32\ole32.dll
+0x773d0000 - 0x774d3000 	C:\WINDOWS\WinSxS\x86_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.2600.6028_x-ww_61e65202\COMCTL32.dll
+0x77f60000 - 0x77fd6000 	C:\WINDOWS\system32\SHLWAPI.dll
+0x5ad70000 - 0x5ada8000 	C:\WINDOWS\system32\uxtheme.dll
+0x10000000 - 0x10053000 	C:\Documents and Settings\All Users\Application Data\Anti-phishing Domain Advisor\visicom_antiphishing.dll
+0x77c00000 - 0x77c08000 	C:\WINDOWS\system32\VERSION.dll
+0x71ab0000 - 0x71ac7000 	C:\WINDOWS\system32\WS2_32.dll
+0x71aa0000 - 0x71aa8000 	C:\WINDOWS\system32\WS2HELP.dll
+0x7c9c0000 - 0x7d1d7000 	C:\WINDOWS\system32\SHELL32.dll
+0x77120000 - 0x771ab000 	C:\WINDOWS\system32\OLEAUT32.dll
+0x03030000 - 0x0303a000 	C:\Program Files\SweetIM\Messenger\mgAdaptersProxy.dll
+0x74720000 - 0x7476c000 	C:\WINDOWS\system32\MSCTF.dll
+0x03090000 - 0x03099000 	C:\Documents and Settings\owner\Local Settings\Application Data\FLVService\lib\FLVSrvLib.dll
+0x78520000 - 0x785c3000 	C:\WINDOWS\WinSxS\x86_Microsoft.VC90.CRT_1fc8b3b9a1e18e3b_9.0.30729.4148_x-ww_d495ac4e\MSVCR90.dll
+0x77b40000 - 0x77b62000 	C:\WINDOWS\system32\apphelp.dll
+0x755c0000 - 0x755ee000 	C:\WINDOWS\system32\msctfime.ime
+0x6d2e0000 - 0x6d32f000 	C:\java6\jre\bin\fontmanager.dll
+0x6d4f0000 - 0x6d515000 	C:\java6\jre\bin\jpeg.dll
+0x6d6b0000 - 0x6d6c3000 	C:\java6\jre\bin\net.dll
+0x6d6d0000 - 0x6d6d9000 	C:\java6\jre\bin\nio.dll
+
+VM Arguments:
+java_command: chgridframe
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+PATH=C:\java6\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\Program Files\Microsoft Visual Studio\Common\Tools\WinNT;C:\Program Files\Microsoft Visual Studio\Common\MSDev98\Bin;C:\Program Files\Microsoft Visual Studio\Common\Tools;C:\Program Files\Microsoft Visual Studio\VC98\bin
+USERNAME=owner
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=x86 Family 6 Model 23 Stepping 10, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows XP Build 2600 Service Pack 3, v.6368
+
+CPU:total 2 (2 cores per cpu, 1 threads per core) family 6 model 23 stepping 10, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3
+
+Memory: 4k page, physical 1036052k(461024k free), swap 3032084k(2544432k free)
+
+vm_info: Java HotSpot(TM) Client VM (17.1-b03) for windows-x86 JRE (1.6.0_22-b04), built on Sep 15 2010 00:56:36 by "java_re" with MS VC++ 7.1 (VS2003)
+
+time: Tue Jul 16 15:30:09 2013
+elapsed time: 3 seconds
+

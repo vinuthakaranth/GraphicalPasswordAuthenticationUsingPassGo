@@ -1,0 +1,221 @@
+/*****************************/
+/*** Core html setup stuff ***/
+/*****************************/
+html { height: 100%; margin-bottom: 0px;}
+body{font-family: Arial, Helvetica, sans-serif;
+	  line-height: 20px;
+	  margin: 0px 0px 0px 0px;
+	  color: #000000;}
+	  
+body.default {font-size:12px;}
+body.large {font-size:14px;}
+body.smaller {font-size: 11px;}	  
+img { border: none;}	  
+#all{ background: url(../images/default/bg_top.gif) top left repeat-x;}
+#wrap_narrow {
+width: 760px; /*IE6 hack*/
+margin:0 auto; /*center hack*/
+text-align:left; /*center hack*/
+}
+#wrap_wide {
+width:960px; /*IE6 hack*/
+margin:0 auto; /*center hack*/
+text-align:left; /*center hack*/
+}
+#wrap {
+min-width:760px;
+max-width:960px;
+width: auto !important; /*IE6 hack*/
+width:960px; /*IE6 hack*/
+margin:0 auto; /*center hack*/
+text-align:left; /*center hack*/
+}
+#logo_search{ width: 100%; padding: 30px 0px 20px 0px;}
+#logo{ float: left; width: 45%; text-align: left; padding: 0px 0px 0px 7px;}
+#logo img{ margin: 0px; padding: 0px; border: 0px; vertical-align: top;}
+#search{ float: right; width: 50%; text-align: right; padding: 20px 0px 20px 0px;}
+#topmenu_icons{ width: 100%; height: 36px; background: #019fd5;}
+#icons{ float: left; width: 18%; padding-left: 20px; margin-top: 13px;}
+#topmenu{ float: right; width: 75%;}
+#baner{ width: 100%; margin: 1px 0px 1px 0px; height: 128px; overflow: hidden; position: relative; z-index:1;}
+#baner img{ margin: 0px; padding: 0px; border: 0px; vertical-align: top;}
+#baner_module{ width: 60%; position: absolute; z-index: 2; top:10px; left: 30%; bottom: 0px; right: 0px; padding: 0px 20px 20px 0px; overflow: hidden;}
+#path_fonts{ width: 100%; border-top: 1px solid #d6e6eb; border-bottom: 1px solid #d6e6eb; padding: 12px 0px 12px 0px;}
+#path{ float: left; width: 60%; color: #878888; padding-left: 7px;}
+#path span{ color: #006383;}
+#path img{ margin: 0px 5px 0px 5px; border: 0px;}
+#fonts{ float: right; width: 25%; text-align: right;}
+#fonts img { margin: 0px 10px 0px 0px; border: 0px; vertical-align: top; padding: 0px;}
+#footer{ width: 100%; border-top: 3px solid #56ac2a; padding: 10px 0px 10px 0px;}
+#xhtml_css{ float: left; width: 50%;}
+#rss{ float: right; width: 50%; text-align: right;}
+#contener{ width: 100%; padding: 15px 0px 15px 0px;}
+#sidebar {float:left;width:20%; overflow:hidden; } 
+#content60 {float:left;width:60%;overflow:hidden;}
+#content80 {float:left;width:80%;overflow:hidden;}
+#content100 {float:left;width:100%;overflow:hidden;}
+#sidebar-2 {float:left;width:20%; overflow:hidden;} 
+.inside {padding: 0px 15px 0px 15px;}
+
+/*********************************************************************************************/
+#topmenu_icons a:link, #topmenu_icons a:visited{ margin: 0px 3px 0px 0px;}
+#rss a:link, #rss a:visited{ text-decoration:  none; font-weight: bold;}
+#sidebar ul, #sidebar-2 ul
+{
+	list-style-type: none;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+#sidebar ul li
+{	list-style: none;
+	border-top: solid 1px #d7e7ec;
+	margin: 0px 0px 0px 0;
+	padding: 0px 0px 0px 9px; line-height: 14px;
+}
+#sidebar-2 ul li
+{	list-style: none;
+	border-top: solid 0px #d7e7ec;
+	margin: 0px 0px 0px 0;
+	padding: 0px 0px 0px 9px; line-height: 14px;
+}
+#sidebar ul li a:link,#sidebar-2 ul li a:link,#sidebar ul li  a:visited, #sidebar-2 ul li  a:visited
+{	
+	display: block;
+	padding: 4px 2px 4px 10px;
+	text-decoration: none;
+	background: url(../images/default/bg_alink.png) left no-repeat;
+	color: #006383;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	vertical-align: top;
+	line-height: 14px;
+}
+#sidebar ul li a:hover,#sidebar-2 ul li a:hover
+{ text-decoration: underline;}
+
+#sidebar ul li ul, #sidebar-2 ul li ul
+{
+	list-style-type: none;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+#sidebar ul li ul li, #sidebar-2 ul li ul li
+{	list-style: none;
+	border-bottom: solid 0px #d7e7ec;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 1px; line-height: 1.3em;
+}
+#sidebar ul li ul li a:link,#sidebar-2 ul li ul li a:link,#sidebar ul li ul li a:visited, #sidebar-2 ul li ul li a:visited
+{	
+	display: block;
+	padding: 2px 2px 2px 10px;
+	text-decoration: none;
+	background:none;
+	color: #006383;
+	font-size: 0.9em;
+	line-height: 1.3em;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	vertical-align: top;
+}
+#sidebar ul li ul li a:hover,#sidebar-2 ul li  ul li a:hover
+{ text-decoration: underline;}
+/*************************************************************************/
+#sidebar  a.mainlevel:link, #sidebar  a.mainlevel:visited { 
+	display: block;
+	padding: 4px 2px 4px 10px;
+	margin-left: 10px;
+	text-decoration: none;
+	border-top: solid 1px #d7e7ec;
+	background: url(../images/default/bg_alink.png) left no-repeat;
+	color: #006383;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	vertical-align: top;
+	line-height: 14px;
+	}
+#sidebar   a.mainlevel:hover { text-decoration: underline;}	
+#sidebar   a.mainlevel#active_menu{ text-decoration: underline;}
+#sidebar   a.sublevel:link, #sidebar   a.sublevel:visited { 
+	display: block;
+	padding: 2px 2px 2px 10px;
+	text-decoration: none;
+	background:none;
+	color: #006383;
+	font-size: 0.9em;
+	line-height: 1.3em;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	vertical-align: top;
+	}
+#sidebar   a.sublevel:hover {text-decoration: underline;}	
+#sidebar  a.sublevel#active_menu{ text-decoration: underline;}
+/*************************************************************************/
+
+#search .inputbox{
+	border-top: 1px solid #5fa93a;
+	border-left: 1px solid #5fa93a;
+	border-bottom: 0px;
+	border-right: 0px;
+	height: 17px;
+	width: 165px;
+	font-size: 11px;
+	line-height: 11px;
+	font-weight: normal;
+	color: #ffffff;
+	background: url(../images/default/bg_inputbox.gif) top left repeat-x;
+	margin: 0px 0px 0px 0px;
+	padding: 2px 0px 2px 4px;
+	vertical-align: middle;}
+#search .button {
+	border: 0px;
+	width: 22px;
+	height: 22px;
+	background: url(../images/default/bg_button.gif) left top no-repeat;
+	color: #5C465F;
+	font-size: 1px;
+	font-weight: bold;
+ 	margin: 0px 0px 0px 5px;
+	padding: 3px 0px 7px 0px;
+	vertical-align: middle;} 
+
+#sidebar  form ul, #sidebar-2 form ul
+{
+	list-style-type: none;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+#sidebar form ul li, #sidebar-2 form ul li
+{	list-style: none;
+	border-top: solid 0px #d7e7ec;
+	margin: 0px 0px 0px 0;
+	padding: 0px 0px 0px 9px;
+}
+#sidebar form ul li a:link,#sidebar-2 form ul li a:link,#sidebar form ul li  a:visited, #sidebar-2 form ul li  a:visited
+{	
+	display: block;
+	padding: 4px 2px 4px 10px;
+	text-decoration: none;
+	background: url(../images/default/bg_alink_green.png) left no-repeat;
+	color: #56ac2a;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	vertical-align: top;
+	line-height: 14px;
+}
+#sidebar form ul li a:hover,#sidebar-2 form ul li a:hover
+{ text-decoration: underline;}
+/*********************************************************************************************/
+
+
+form {
+  margin: 0;
+  padding: 0;
+}
+/* height bug */
+.clearfix:after {content:".";display:block;height:0;clear:both;visibility:hidden;}
+.clearfix {display:inline-table;}
+/* Hides from IE-mac \*/
+* html .clearfix {height:1%;}
+.clearfix {display:block;}
+/* End hide from IE-mac */

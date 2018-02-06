@@ -1,0 +1,265 @@
+/* CSS Document */
+table, td, ul, a, li, img, form, hr, dl, dt, dd, div, h3, h4, h2, h1  {margin:0px; padding:0px;}
+h1{ font-size: 1.4em;} h2{ font-size: 1.2em;} h3{ font-size: 1em;} h4{ font-size: 0.9em;} h5{ font-size: 0.8em;} h6{ font-size: 0.7em;}
+a:link, a:visited{ /*font-size: 12px; */color: #56ac2a; font-weight: normal; text-decoration: underline;}
+a:hover{ text-decoration: none;}
+div{ margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px;}
+ul{	margin: 0px; padding: 0px; list-style: square; }
+li{	/*padding-left: 10px;*/ margin-left: 20px; text-align: left;}
+p {text-indent: 0px; margin: 5px 0px 5px 0px; padding: 2px;}
+
+
+a.pathway:link, a.pathway:visited{ /*font-size: 12px;*/ color: #56ac2a; font-weight: bold; text-decoration: none;}
+a.pathway:hover{ text-decoration: underline;}
+
+
+table.contentpaneopen {
+  	width: 98%;
+	border-collapse: collapse;
+	border-spacing: 0px;
+	margin: 0px;
+	padding: 0px;
+	text-align: left;}
+.contentpaneopen td img { margin: 5px; padding: 0px; border: 1px solid #555555;}
+.contentpaneopen .buttonheading img{ border: 0px; margin: 0px 5px; padding: 0px;}
+.contentpane {width:98%; text-align: justify;}
+.contentpane .inputbox { display:block;}
+table.contenttoc { margin: 10px; line-height: 15px; }
+table.contenttoc td { padding: 2px;}
+table.contenttoc th { text-align: center; padding: 2px 0px;}
+a.toclink:link, a.toclink:visited{font-size: 0.8em; text-decoration: underline; font-weight: normal; }
+a.toclink:hover{ text-decoration: none;} 
+
+.componentheader, .componentheading,  .contentheading {
+	font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.3em; 
+	color: #006383;
+	text-indent: 0px; 
+	padding: 0px 0px 10px 0px;
+	line-height: 16px;
+	text-align: left;}
+	
+table .poll {width:90%; text-align:left;} 
+table .poll-pink {width:90%; text-align:left;} 
+table .poll-green {width:90%; text-align:left;} 
+.poll thead {color: #56ac2a;}
+.pollstableborder{ text-align:left; }
+.pollstableborder td { padding: 2px; } 
+
+.inputbox{
+	border: 1px solid #d6e6eb;
+	font-size: 11px;
+	line-height: 11px;
+	font-weight: normal;
+	color: #5c5d5d;
+	background: #edf4f6;
+	margin: 0px 0px 3px 0px;
+	padding: 2px 0px 2px 4px;
+	vertical-align: middle;}
+
+.button {
+	border: 0px;
+	background: #006383;
+	color: #ffffff;
+	font-size: 11px;
+	font-weight: bold;
+ 	margin: 5px 0px 3px 0px;
+	padding: 3px;
+	vertical-align: middle;} 
+.small {
+line-height: 15px;
+font-size: 0.9em;
+color: #ff0024;
+font-weight: normal;
+padding: 0px 0px 0px 0px;}
+.smalldark {
+line-height: 1.0;
+text-align: left;
+font-size: 0.8em;
+color: #56ac2a;
+font-weight: normal;}
+.createdate {
+text-align: left;
+line-height: 15px;
+font-size: 0.9em;
+color: #56ac2a;
+font-weight: normal;
+padding: 0px 0px 10px 0px;}
+.modifydate {
+font-size: 0.9em;
+line-height:1.0;
+color: #56ac2a;
+padding: 3px 0px;
+font-weight: normal;
+text-align: right;}
+div.mosimage {
+  border: none;
+  margin: 0px;
+  padding: 0px;}
+.mosimage{
+  border: none;
+  margin: 5px;
+  padding: 0px;}
+.mosimage_caption {
+  font-size: 0.8em;
+  background: none;
+  margin: 0px;
+  padding: 0px;
+  color: #555555;
+  border-top: none;}
+ .blog_more ul li{
+list-style: none;
+padding-left: 14px;
+line-height: 20px;}
+.blog_more{
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 0.9em;} 
+	
+ .sectiontableheader {font-weight: bold; padding: 4px 0px;}
+/* kolor rzedow w spisach i tabelach parzystych*/
+.sectiontableentry1, .sectiontableentry1-pink, .sectiontableentry1-green {
+	text-align: left;
+	padding: 4px;
+	background: none;}
+/* kolor rzedow w spisach i tabelach nieparzystych */
+.sectiontableentry2, .sectiontableentry2-pink, .sectiontableentry2-green {
+	text-align: left;
+	padding: 4px;
+	background: none;}
+.article_seperator { display:block; width:100%; height: 10px; background: none;}
+.readon{}
+a.readon:link, a.readon:visited{ background: url(../images/default/default/bg_readon.gif) left no-repeat; line-height: 20px; padding: 0px 0px 0px 15px; margin: 0px; text-decoration: none; font-size:  0.9em; color:#006383; font-weight: bold; text-align: right;}	
+a.readon:hover{ text-decoration: underline;}
+div.back_button a:link, div.back_button a:visited{ font-size:  0.9em; padding: 2px 0px; margin: 3px; text-decoration: none;  font-weight: normal;} 
+.back_button{ padding: 5px;}
+ .pagenav_prev a:link, .pagenav_prev a:visited{text-decoration: none; font-size:  0.9em;  font-weight: bold; color:#006383;}
+ .pagenav_next a:link, .pagenav_next a:visited{ text-decoration: none; font-size:  0.9em;  font-weight: bold; color:#006383;}
+ .pagenavbar a:link, .pagenavbar a:visited{text-decoration: none; font-size:  0.9em;  font-weight: bold; color:#006383;}	  
+ 
+div.moduletable h3, div.moduletable_menu h3, div.moduletable_text h3{
+	background: none;
+	color:#006383;
+	/*font-size: 12px;*/
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	text-align: left;
+	line-height: 30px;
+	padding-left: 9px;} 
+div.moduletable, div.moduletable_menu, div.moduletable_text{ background: none; margin: 0px 0px 15px 0px; padding: 0px 0px 0px 0px; border: 1px solid #d7e7ec;}
+div.moduletable div, div.moduletable_text div{margin: 10px 9px 10px 9px; padding: 0px 0px 0px 0px;}
+div.moduletable div div, div.moduletable_text div div{margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px;}
+div.moduletable div div div, div.moduletable_text div div div{margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px;}
+div.moduletable table{margin: 10px 9px 10px 9px; padding: 0px 0px 0px 0px;}
+div.moduletable table div{margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px;}
+div.moduletable table form{margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px;}
+div.moduletable form {margin: 10px 9px 10px 9px; padding: 0px;}
+div.moduletable form table{margin: 0px 0px 0px 0px; padding: 0px;}
+div.moduletable form p{margin: 0px 0px 0px 0px; padding: 0px;}
+div.moduletable ul, div.moduletable_menu ul {margin: 10px 9px 10px 9px; padding: 0px 0px 0px 0px;}
+div.moduletable ul li, div.moduletable_menu ul li{margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px;}
+div.moduletable p{ margin: 10px 9px 10px 9px; padding: 0px 0px 0px 0px; text-indent: 0px;}
+div.moduletable div.syndicate {padding: 10px 0px 0px 0px; margin:0px}
+div.moduletable div.syndicate div {margin: 0px; padding: 0px;}
+
+div.moduletable_bgh3 h3, div.moduletable_menu_bgh3 h3, div.moduletable_menu_bgh3 h3{
+	background: #edf4f6;
+	color:#006383;
+	/*font-size: 12px;*/
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	text-align: left;
+	line-height: 30px;
+	padding-left: 9px;} 
+div.moduletable_bgh3, div.moduletable_menu_bgh3, div.moduletable_menu_bgh3{ background: none; margin: 0px 0px 15px 0px; padding: 0px 0px 0px 0px; border: 1px solid #d7e7ec;}
+div.moduletable_bgh3 div, div.moduletable_text_bgh3 div{margin: 10px 9px 10px 9px; padding: 0px 0px 0px 0px;}
+div.moduletable_bgh3 div div, div.moduletable_text_bgh3 div div{margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px;}
+div.moduletable_bgh3 div div div, div.moduletable_text_bgh3 div div div{margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px;}
+div.moduletable_bgh3 table{margin: 10px 9px 10px 9px; padding: 0px 0px 0px 0px;}
+div.moduletable_bgh3 table div{margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px;}
+div.moduletable_bgh3 table form{margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px;}
+div.moduletable_bgh3 form {margin: 10px 9px 10px 9px; padding: 0px;}
+div.moduletable_bgh3 form table{margin: 0px 0px 0px 0px; padding: 0px;}
+div.moduletable_bgh3 form p{margin: 0px 0px 0px 0px; padding: 0px;}
+div.moduletable_bgh3 ul, div.moduletable_menu_bgh3 ul {margin: 10px 9px 10px 9px; padding: 0px 0px 0px 0px;}
+div.moduletable_bgh3 ul li, div.moduletable_menu_bgh3 ul li{margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px;}
+div.moduletable_bgh3 p{ margin: 10px 9px 10px 9px; padding: 0px 0px 0px 0px; text-indent: 0px;}
+div.moduletable_bgh3 div.syndicate {padding: 10px 0px 0px 0px; margin:0px}
+div.moduletable_bgh3 div.syndicate div {margin: 0px; padding: 0px;}
+
+div.moduletable_bg h3, div.moduletable_menu_bg h3, div.moduletable_menu_bg h3{
+	background: #edf4f6;
+	color:#006383;
+	/*font-size: 12px;*/
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	text-align: left;
+	line-height: 30px;
+	padding-left: 9px;} 
+div.moduletable_bg, div.moduletable_menu_bg, div.moduletable_menu_bg{ background: #edf4f6; margin: 0px 0px 15px 0px; padding: 0px 0px 0px 0px; border: 1px solid #d7e7ec;}
+div.moduletable_bg div, div.moduletable_text_bg div{margin: 10px 9px 10px 9px; padding: 0px 0px 0px 0px;}
+div.moduletable_bg div div, div.moduletable_text_bg div div{margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px;}
+div.moduletable_bg div div div, div.moduletable_text_bg div div div{margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px;}
+div.moduletable_bg table{margin: 10px 9px 10px 9px; padding: 0px 0px 0px 0px;}
+div.moduletable_bg table div{margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px;}
+div.moduletable_bg table form{margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px;}
+div.moduletable_bg form {margin: 10px 9px 10px 9px; padding: 0px;}
+div.moduletable_bg form table{margin: 0px 0px 0px 0px; padding: 0px;}
+div.moduletable_bg form p{margin: 0px 0px 0px 0px; padding: 0px;}
+div.moduletable_bg ul, div.moduletable_menu_bg ul {margin: 10px 9px 10px 9px; padding: 0px 0px 0px 0px;}
+div.moduletable_bg ul li, div.moduletable_menu_bg ul li{margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px;}
+div.moduletable_bg p{ margin: 10px 9px 10px 9px; padding: 0px 0px 0px 0px; text-indent: 0px;}
+div.moduletable_bg div.syndicate {padding: 10px 0px 0px 0px; margin:0px}
+div.moduletable_bg div.syndicate div {margin: 0px; padding: 0px;}
+
+div.moduletable_arrow_bg h3, div.moduletable_menu_arrow_bg h3, div.moduletable_menu_arrow_bg h3{
+	background: url(../images/default/arrow_bg.gif) left no-repeat;
+	color:#000000;
+	/*font-size: 12px;*/
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	text-align: left;
+	line-height: 30px;
+	padding-left: 15px;
+	margin-left: 9px;} 
+	
+div.moduletable_arrow_bg, div.moduletable_menu_arrow_bg, div.moduletable_menu_arrow_bg{ background: none; margin: 0px 0px 15px 0px; padding: 0px 0px 0px 0px; border: 1px solid #d7e7ec;}
+div.moduletable_arrow_bg div, div.moduletable_text_arrow_bg div{margin: 10px 9px 10px 9px; padding: 0px 0px 0px 0px;}
+div.moduletable_arrow_bg div div, div.moduletable_text_arrow_bg div div{margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px;}
+div.moduletable_arrow_bg div div div, div.moduletable_text_arrow_bg div div div{margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px;}
+div.moduletable_arrow_bg table{margin: 10px 9px 10px 9px; padding: 0px 0px 0px 0px;}
+div.moduletable_arrow_bg table div{margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px;}
+div.moduletable_arrow_bg table form{margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px;}
+div.moduletable_arrow_bg form {margin: 10px 9px 10px 9px; padding: 0px;}
+div.moduletable_arrow_bg form table{margin: 0px 0px 0px 0px; padding: 0px;}
+div.moduletable_arrow_bg form p{margin: 0px 0px 0px 0px; padding: 0px;}
+div.moduletable_arrow_bg ul, div.moduletable_menu_arrow_bg ul {margin: 10px 9px 10px 9px; padding: 0px 0px 0px 0px;}
+div.moduletable_arrow_bg ul li, div.moduletable_menu_arrow_bg ul li{margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px;}
+div.moduletable_arrow_bg p{ margin: 10px 9px 10px 9px; padding: 0px 0px 0px 0px; text-indent: 0px;}
+div.moduletable_arrow_bg div.syndicate {padding: 10px 0px 0px 0px; margin:0px}
+div.moduletable_arrow_bg div.syndicate div {margin: 0px; padding: 0px;}
+
+
+body.contentpane {background:#fff; color:#000; padding: 15px; font-size: 11px; text-align: left;}
+body.contentpane h1, body.contentpane h2, body.contentpane h3 {background:#fff; color:#000;font-size: 12px;}
+body.contentpane a, body.contentpane span.small, body.contentpane table.contentpaneopen td, body.contentpane table td
+{background:#fff; color:#000; font-size: 11px;}
+body.contentpane .componentheading, body.contentpane .contentheading {background:#fff; color:#000; font-weight: bold; font-size: 12px;}
+body.p {margin-bottom: 5px;}
+body.contentpane .button{color:black; border:1px solid black; background: #fff; font-size: 11px; width: 90px;}
+body.contentpane .inputbox {background: #FFFFFF; color: #000; border: solid 1px #000;}
+body.contentpane td{padding:3px; background:#fff; color:#000;font-size: 11px;} 	
+
+
+
+fieldset
+{
+	border: solid 0px #000;
+	margin: 0 0 0 0px;
+	padding: 0px;
+	text-align:left
+}
+fieldset label{ font-size: 0.9em;}
+
+

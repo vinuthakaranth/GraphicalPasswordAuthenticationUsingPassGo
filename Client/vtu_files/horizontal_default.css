@@ -1,0 +1,230 @@
+/*************************************************************************
+* This is the SKIN style definition for the CSS menu.                    *
+* Feel free to customize this section.                                   *
+*************************************************************************/
+
+/*
+ * Menu container settings
+ * Applies to the first level menu container
+ */
+#topmenu .menu{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+ 	font-weight: bold;
+	background: none;
+}
+
+/*
+ * Menu container settings
+ * Applies to second (or more) level menu containers
+ */
+#topmenu .menu ul {}
+
+/*
+ * Menu items settings
+ * Applies to all menu items in all menu containers
+ */
+#topmenu .menu li {
+	padding: 0px;
+	margin: 0px 0px 0px 0px;
+	}
+
+/*
+ * Menu items settings
+ * Applies to second (or more) level menu items
+ */
+#topmenu .menu ul li {
+	width: 179px;
+	padding: 0px  13px 0px 13px;
+	background: #019fd5;
+	margin: 0px; border-bottom: 1px solid #ffffff;
+	/*filter:alpha(opacity=80);
+	-moz-opacity:.80;opacity:.80;*/
+}
+
+/*
+ * Menu link settings
+ * Applies to links that are to be found within the menu items, no matter the menu level
+ */
+#topmenu .menu a {
+	color: #ffffff;
+	text-align: center;
+	text-decoration: none;
+	line-height: 16px;
+	cursor: pointer;
+	padding: 10px 13px 10px 13px;
+	border-left: 1px solid #ffffff;
+	margin: 0px 0px 0px 0px;
+	background: none;
+	font-weight: bold;
+	font-size: 12px;
+	background: none;
+}
+
+/*
+ * Menu link settings
+ * Applies to links located in the second (or more) level menu items
+ */
+#topmenu .menu ul a {
+	text-align: left;
+ 	color: #ffffff;
+	font-size: 12px;
+	line-height: 14px;
+	padding: 7px 0px 6px 0px;
+	border-left: 0px;	
+}
+
+/***************************************************************************
+* In this section, we will define what happens when mouse-overing an item  *
+***************************************************************************/
+/*
+ * Mouse over on menu items
+ * Applies to all menu items in all menu containers
+ */
+#topmenu .menu li.hover { background: #0080a9;}
+  
+/*
+ * Mouse over on menu items
+ * Applies to second (or more) level menu items
+ */
+#topmenu .menu ul li.hover { background: #0080a9;}
+
+/*
+ * Mouse over on links
+ * Applies to all links in all menu items
+ */
+#topmenu .menu a.hover {
+	background: url(../images/topmenu_hover.gif) top center no-repeat;
+	border-left: 1px solid #ffffff;
+	padding: 10px 13px 10px 13px;
+	text-decoration: none;}
+
+/*
+ * Mouse over on links
+ * Applies to links located in the second (or more) level menu items
+ */
+#topmenu .menu ul a.hover {
+background: #0080a9;
+color: #ffffff;
+text-decoration: none;
+padding: 7px 0px 6px 0px;
+border-left: 0px;}
+/*****************************************************************************
+* In this section, we will define what happens when a menu item is selected  *
+*****************************************************************************/
+/*
+ * Selected menu item
+ * Applies to selected menu items in all menu containers
+ */
+#topmenu .menu li.selected {	}
+
+/*
+ * Selected menu item
+ * Applies to second (or more) level selected menu items
+ */
+#topmenu .menu ul li.selected {}
+
+/*
+ * Selected links
+ * Applies to selected links in all menu items
+ */
+#topmenu .menu a.selected { color: #ffffff;}
+
+/*
+ * Selected links
+ * Applies to selected links located in the second (or more) level menu items
+ */
+#topmenu .menu ul a.selected {
+	color: #ffffff;
+	
+}
+/******************************************************************************
+* In this section, we will define the menu arrows behavior                    *
+* An arrow is inserted next to the menu item when the menu item has sub-menus *
+******************************************************************************/
+
+/* 
+ * Define the arrow
+ * Applies to all menu items that have sub-menus
+ */
+.menu .arrow {
+
+}
+
+/* 
+ * Define the arrow
+ * Applies to all menu items that have sub-menus located in the second (or more) level
+ */
+.menu .hover ul .arrow,
+.menu ul .arrow {}
+
+/* 
+ * Define the arrow on mouse over
+ * Applies to all menu items that have sub-menus on mouse over
+ */
+.menu .hover .arrow {
+
+/*background: url(../images/bg_submenu_hover.gif) right no-repeat;*/
+}
+
+/* 
+ * Define the arrow on mouse over
+ * Applies to all menu items that have sub-menus located in the second (or more) level on mouse over
+ */
+.menu ul .hover .arrow {}
+
+/*************************************************************************
+* This is the LAYOUT style definition for the CSS menu                   *
+* DO NOT alter this section, unless you know what you're doing           *
+*************************************************************************/
+div.horizontal {
+	clear: both;
+}
+div.horizontal br {
+	clear: both;
+}
+div.horizontal ul {
+	margin: 0px;
+	padding: 0px;
+	display: block;
+	float: left;
+	clear: both;
+}
+div.horizontal li {
+	list-style-type: none;
+	display: block;
+	float: left;
+	clear: none;
+	text-align: left;
+    position: static;
+}
+div.horizontal li img {
+	border: none;
+}
+div.horizontal a {
+	clear: both;
+	display: block;
+	margin: 0px;
+}
+div.horizontal ul li ul {
+	position: absolute;
+	left: -5000px;
+	top: -5000px;
+	visibility: hidden;
+	clear: both; 
+}
+div.horizontal ul li ul li {
+	clear: both; 
+}
+div.horizontal ul li ul li a {
+	clear: both;
+}
+.hasImg,
+.hasImg a {
+	padding: 0px !important;
+	margin:	0px	!important;
+	border:	none !important;
+	outline: none !important;
+	background:	transparent !important;
+	width: auto !important;
+}
