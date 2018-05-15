@@ -1,5 +1,5 @@
 # GraphicalPasswordAuthenticationUsingPassGo
-This is a stand alone project which can be easily developed and tested on the system.
+This is a stand alone project in Java, which can be easily developed and tested on the system.
 
 In this project, we are implementing the ‘PASS-GO’ technique which is a grid based scheme in order to overcome the drawbacks of traditional password schemes. 
 Pass-Go requires a user to select (or touch) intersections, as a way to input a password, which is stored in a database during the initial registration process. 
